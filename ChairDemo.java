@@ -66,20 +66,35 @@ class ChairDemo
 		public static void main(String args[])
 	{
 	
-		ChairTake18 LazyBoi = new ChairTake18();
+		ChairTake18 LB18 = new ChairTake18();
 	
-		LazyBoi.back = true;
-		LazyBoi.seat = true;
-		LazyBoi.legs = "Posts";
-		LazyBoi.type = "Rocking Chair";
-		LazyBoi.color = "Brown";
-		LazyBoi.material = "Leather";
+		LB18.back = true;
+		LB18.seat = true;
+		LB18.legs = "Posts";
+		LB18.type = "Rocking Chair";
+		LB18.color = "Brown";
+		LB18.material = "Leather";
 		
 		
-		LazyBoi.basicChair();
+		LB18.basicChair();
 		System.out.println();
-		LazyBoi.style();
+		LB18.style();
 		System.out.println();
+		
+		LazyBoi LB19 = new LazyBoi();
+	
+		LB19.back = true;
+		LB19.seat = true;
+		LB19.legs = "Posts";
+		LB19.type = "Rocking Chair";
+		LB19.color = "Brown";
+		LB19.material = "Leather";
+		
+		
+		LB19.basicChair();
+		System.out.println();
+		LB19.style();
+		System.out.println();	
 		
 		ChairTake18 ComputerChair = new ChairTake18();
 		
