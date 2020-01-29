@@ -1,0 +1,16 @@
+class Demowheel {
+	public static void main(String args[]) {
+		
+		public void tell() {
+			System.out.println("you SEE it");
+		}
+		
+		Superwheel Bigwheel = new Subwheel();
+		
+		Bigwheel.speed = 2;
+		
+		Bigwheel.fast = Bigwheel.roll(Bigwheel.speed);
+		
+		
+	}
+}
