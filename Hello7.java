@@ -14,5 +14,11 @@ class Hello7{
 }
 		void decision(int a){
 		System.out.println(a);
-	}
+		}
+		void decision(String b){
+		System.out.println(b);
+		}
+		void decision(int c, String d){
+		System.out.println(int c,String d);
+		}
 }
