@@ -12,7 +12,7 @@ class Hello7{
 		}
 		else System.out.println("Hello Guest User " + userName);
 }
-void decision(int a){
+		void decision(int a){
 		System.out.println(a);
 	}
 }
