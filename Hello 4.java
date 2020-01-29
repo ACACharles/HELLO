@@ -20,7 +20,12 @@ class Hello
 				
 	}
 	public void MakeADecision(int A){
-		System.out(A);
+		System.out.println(A);
 	}
-	
+	public void MakeADecision(String str){
+		System.out.println(str);
+	}
+	public void MakeADecision(int b String str1){
+		System.out.println(b, "str1");
+	}
 }
