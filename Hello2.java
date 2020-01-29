@@ -26,5 +26,14 @@ class Hello2
 	void Decision(int a) {
 		System.out.print(a);
 	}
+	void Decision(String b)
+	{
+		System.out.print(b);
+	}
+	void Decision (int c, String d)
+	{
+		System.out.print(c,d);
+	}
 }
+
 		
