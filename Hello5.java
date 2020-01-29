@@ -20,4 +20,16 @@ class Hello5
 		{
 				System.out.println(d);
 		}
+
+		void decision(String d)
+		{
+				System.out.println(d);
+		}
+
+		void decision(int id ,String sd)
+		{
+				System.out.println(id"" + sd);
+		}
+
+
 }
