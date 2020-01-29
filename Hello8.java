@@ -21,4 +21,9 @@ class Hello8
 		//I don't really know what I'm doing here.
 		System.out.println(a);
 	}
+	public static void decision(int a, b)
+	{
+		//I still don't really know what I'm doing here.
+		System.out.println(a, b);
+	}
 }
