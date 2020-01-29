@@ -19,6 +19,6 @@ class Hello8
 	public static void decision(int a)
 	{
 		//I don't really know what I'm doing here.
-		System.out.println(int a);
+		System.out.println(a);
 	}
 }
