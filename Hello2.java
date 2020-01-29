@@ -32,7 +32,7 @@ class Hello2
 	}
 	void Decision (int c, String d)
 	{
-		System.out.print(c,d);
+		System.out.print(c + d);
 	}
 }
 
