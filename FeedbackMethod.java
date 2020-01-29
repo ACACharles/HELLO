@@ -9,7 +9,7 @@ class ScannerExample {
 		else System.out.println("Name is: " + name);             
 		in.close();
 	}
-	void ebic(int d){
+	void decision(int d){
 	System.out.println(d);
 	}
 }  
