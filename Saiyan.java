@@ -37,6 +37,14 @@ class Saiyan { // Superclass called Saiyans a.k.a Dem Monkey Boyz
 		System.out.println("THE PRINCE OF ALL SAIYANS!");
 		return 250000; // Anger method "anger()" returns an int value instantiated on this line
 	}
+	int Monkey(){
+		System.out.println("SHOCK THE MONKEY!!!");
+		return 0;
+	}	
+	int SuperSaiyan(){
+		System.out.println("BRING IT ON!");
+		return 0;
+	}
 }
 class Goku extends Saiyan { // Goku creates an instance of Saiyan
 	private String stance;
@@ -64,6 +72,10 @@ class Goku extends Saiyan { // Goku creates an instance of Saiyan
 	void showStyle() {
 		System.out.println("Goku is " + stance);
 	}
+	int Monkey(){
+		System.out.println("Does nothing.");
+		return 0;
+	}
 }
 class Gohan extends Saiyan{
 		Gohan() { // Method called Gohan
@@ -85,21 +97,48 @@ class Gohan extends Saiyan{
 		int anger() { //Overriden method from Saiyan superclass
 			return getPower() * getSpeed();
 		}
-	
+		int Monkey(){
+			return getPower() * getSpeed() * 8;
+		}
 }
+class Vegeta extends Saiyan{
+		Vegeta(){
+			super();
+		}
+		Vegeta(int p, int s){
+			super(p, s, "Vegeta");
+		}
+		Vegeta(int x){
+			super(x, "Vegeta");
+		}
+		Vegeta(Vegeta ob){
+			super (ob);
+		}
+		int anger(){
+			return getPower() * getSpeed() * 4;
+		}
+		int SuperSaiyan(){
+			return getPower() * getSpeed() * 10;
+		}
+}	
 class SuperSaiyans {
 	
 	public static void main(String args[]) {
 		Saiyan fighter[] = new Saiyan [3]; // Creates an array of 3 Saiyans
 		
-		fighter [0] = new Goku ("kaio-ken" , 9500, 45);
-		fighter [1] = new Gohan (1400, 90);
-		fighter [2] = new Saiyan(1200, 70, "Vegeta");
+		fighter [0] = new Goku ("kaio-ken" , 2000, 90);
+		fighter [1] = new Gohan (2000, 90);
+		fighter [2] = new Vegeta (2000,90);
 	
 		for(int i = 0; i <fighter.length; i++){
 			System.out.println("Saiyan is " + fighter[i].getAbility());
 			System.out.println("Power is " +fighter[i].anger());
 			System.out.println();
 		}
+			System.out.println("Gohan went MONKEY!!!!");
+			System.out.println("Power is now " +fighter[1].Monkey());
+			System.out.println("The Earth shakes...");
+			System.out.println("Vegeta went SUPER SAIYAN!!!");
+			System.out.println("Power is now "+fighter[2].SuperSaiyan());
 	}
 }
