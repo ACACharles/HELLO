@@ -7,10 +7,10 @@ class Hello3
 		System.out.println("What is your name?: ");
 		String str = userInput.nextLine();
 		
-		
-		System.out.println("Hello " + str + " im a nameless computer. Welcome To The Matrix.");
-			if(str.equals("Zach")) {
-			System.out.println("You have been infected with the T Virus. You will die in:"); 
+			if(str.equals("David")) 
+			System.out.println("Hello " + str + " Password Accepted. Welcome To The Matrix."); 
+			 else 
+			 System.out.println("Password DENIED! You have been infected with the T Virus. You will die in:"); 
 				
 		try 
 		{	
@@ -24,7 +24,7 @@ class Hello3
 			System.out.println("\007");
 			System.out.println(1);
 			Thread.sleep(2000);
-			System.out.println("J/K HELLO Zach!");
+			System.out.println("J/K HELLO " + str +"!");
         } 
 		catch (InterruptedException ie)
         {
@@ -32,10 +32,16 @@ class Hello3
 				}
 			}
 			
-			
-		
-	}
 	public void Decision(int a) {
 		System.out.println(a);
+	}	
+	
+	public void Decision(String umbrellaCorp) {
+		System.out.println(umbrellaCorp);
+	}	
+	
+	public void Decision(int b, String raccoonCity) {
+		System.out.println(b);
+		System.out.println(raccoonCity);
 	}	
 }
