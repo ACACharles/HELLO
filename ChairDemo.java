@@ -6,6 +6,15 @@ class ChairTake18
 	String type; // Computer chair, rocking chair, folding chair
 	String color;
 	String material; //wood, plastic, metal
+	String brand;
+	int year;
+	
+	void brand()
+	{
+		brand = "ChairBrand";
+		System.out.println(brand);
+	}
+	
 	
 	void basicChair()
 	{
@@ -26,7 +35,7 @@ class ChairTake18
 	}		
 }
 
-class LazyBoi extends ChairTake18
+class Recliner extends ChairTake18
 {
 	void reclines()
 	{
@@ -38,18 +47,25 @@ class LazyBoi extends ChairTake18
 
 	
 	}
+	void brand(String b)
+	{
+		brand = b;
+		System.out.println("This is a " + b);
+	}
+	void brand(int y,String b)
+	{
+		brand = b;
+		year = y;
+		
+		System.out.println("This Chair was made in " + year + " and was manufactured by " + brand);
+	}
 	
 	void style()
 	{
-	
-		System.out.println("This is a LazyBoi");
-		
 		super.style();
-		
-		
-		
 	}
-	LazyBoi(){type = "Rocking Chair";}
+	
+	Recliner(){type = "Rocking Chair";}
 	
 	boolean isReclined = false;
 	boolean footRest = true;
@@ -65,35 +81,20 @@ class ChairDemo
 {
 		public static void main(String args[])
 	{
+		Recliner LazyBoi = new Recliner();
 	
-		ChairTake18 LB18 = new ChairTake18();
-	
-		LB18.back = true;
-		LB18.seat = true;
-		LB18.legs = "Posts";
-		LB18.type = "Rocking Chair";
-		LB18.color = "Brown";
-		LB18.material = "Leather";
+		LazyBoi.back = true;
+		LazyBoi.seat = true;
+		LazyBoi.legs = "Posts";
+		LazyBoi.type = "Rocking Chair";
+		LazyBoi.color = "Brown";
+		LazyBoi.material = "Leather";
 		
 		
-		LB18.basicChair();
+		LazyBoi.basicChair();
 		System.out.println();
-		LB18.style();
-		System.out.println();
-		
-		LazyBoi LB19 = new LazyBoi();
-	
-		LB19.back = true;
-		LB19.seat = true;
-		LB19.legs = "Posts";
-		LB19.type = "Rocking Chair";
-		LB19.color = "Brown";
-		LB19.material = "Leather";
-		
-		
-		LB19.basicChair();
-		System.out.println();
-		LB19.style();
+		LazyBoi.brand(2020,"LazyBoi");
+		LazyBoi.style();
 		System.out.println();	
 		
 		ChairTake18 ComputerChair = new ChairTake18();
@@ -107,6 +108,7 @@ class ChairDemo
 		
 		ComputerChair.basicChair();
 		System.out.println();
+		ComputerChair.brand();
 		ComputerChair.style();
 		System.out.println();
 	
