@@ -1,16 +1,20 @@
 class KeyRing extends Key {
   
-	Key[] Bunch = new Key[5];
+	Key[] Bunch = new Key[3];
   
-  void executeAction() {
-    super.executeAction();
+  void key() {
+    super.key;
     System.out.println("You added it to you key ring.");
   }
+   void key(int n, String s) {
+    number = n;
+	size = s;
+    System.out.println("The size a is" + a "\nThe number of keys it has is" + n);
+  }
   public static void main(String... superReservedWord) {
-    new KeyRing().executeAction();
+    new KeyRing().key();
   }
 }
-////////////////////////////////////////////////////////
 class Key {
 	
 	String color = "silver";
@@ -18,11 +22,15 @@ class Key {
 	String type = "house";
 	String material = "metal";
 	
-  void executeAction() {
+  void key() {
     System.out.println("You got a new house key.");
+  }
+	  void key(String t) {
+		type = t;
+    System.out.println("The type of key you have is" + t);
   }
 }
   class KeyDemo{
-	  public static void main(String... superReservedWord){
+	  public static void main(String... super key){
   }
 }
