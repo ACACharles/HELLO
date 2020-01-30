@@ -34,9 +34,52 @@ class dogdemo
    
    System.out.println(myRetriever.type + " " + myRetriever.Retriever);
   }
+  
+  void Pup(boolean wild , int b)
+  {
+	  boolean wild = true;
+	  int b = age;
+	 
+	}
+	
+	
+	void Pup(boolean wild)
+	{
+		
+		if ( 
+		
+		
+		
+		
+		
+		System.out.print("dog is wild");
+	}
+	
+	
+	
+	
+	void Pup(int b)
+	{
+		
+		
+		System.out.print(2);
+	}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
-
-
 
 
 
