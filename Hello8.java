@@ -24,6 +24,7 @@ class Hello8 {
 			case 3: System.out.print("This is case 3"); break;
 			case 4: System.out.print("This is case 4"); break;
 			case 5: System.out.print("This is case 5"); break;
+			default : System.out.print("This is not a case"); break;
 		}
 	}
 
