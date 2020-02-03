@@ -5,12 +5,16 @@ class Hello
 	void decision(int a){
 		System.out.println(a);
 	}
+	void decision(int b, int c, char c){
+		System.out.println(b);
+	}
 	void salutation(String one){
 		System.out.println(one);
 	}
 	void greeting(String one, int a){
 		System.out.println(one + a);
 	}
+	
 	
 	/*	public static void main ( String[] args )
 	{
