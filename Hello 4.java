@@ -19,8 +19,32 @@ class Hello
 						
 				
 	}
-	public void MakeADecision(int A){
-		System.out.println(A);
+	public void MakeADecision(int a){
+
+        String Food; 
+  
+        
+        switch (a) { 
+        case 1: 
+             Food = "I'm eating PIZZA"; 
+            break; 
+        case 2: 
+            Food = "I'm eating BURGER"
+			break;
+        case 3: 
+            Food = "I'm eating SUSHI"; 
+            break; 
+        case 4: 
+            Food = "I'm eating TACOS"; 
+            break; 
+        case 5: 
+            Food = "I'm eating MUFFINS"; 
+            break; 
+		default: 
+            Food = "Put the fork DOWN"; 
+            break; 
+		
+		System.out.println(Food);
 	}
 	public void MakeADecision(String str){
 		System.out.println(str);
