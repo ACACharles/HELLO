@@ -23,17 +23,68 @@ class Hello2
 	
 	
 	}
-	void Decision(int a) {
-		System.out.print(a);
-	}
-	void Decision(String b)
-	{
-		System.out.print(b);
-	}
-	void Decision (int c, String d)
-	{
-		System.out.print(c + d);
-	}
-}
 
+	//int a = 22;
+	int b = 6;
+	String c = "Bryce";
+	String d = "male";
+	
+	
+	
+	
+	void Decision(int a) 
+	{
+		switch(a)
+	{
+		case 22 :
+		
+		System.out.print(a);
+		break;
+		
+		case 6 : 
+		System.out.print(b);
+		break;
+			
+		case 5:
+		System.out.print(c);
+		break;
+		
+		case 42:
+		System.out.print(d);
+		break;
+		
+		case 12:
+		System.out.print(a + c);
+		break;
+		
+		
+	
+	
+	
+
+
+}
+	
+	
+	}
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
